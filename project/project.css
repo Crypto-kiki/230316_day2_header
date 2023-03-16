@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 850px;
+}
+
+header {
+  background-color: #160a29;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.logo-name :nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+}
+
+.logo-name :nth-child(2) {
+  font-size: 11px;
+  font-style: italic;
+  position: relative;
+  bottom: 10px;
+  left: 2px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  width: 400px;
+  height: 14px;
+  background-color: #160a29;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.magnifier {
+  position: relative;
+  right: 40px;
+}
+
+.menu {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.menu a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.wallet a {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#profile {
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+#wallet-connect {
+  border: 1px solid #3e76ef;
+  padding: 10px 25px;
+  background-color: #3e76ef;
+  border-radius: 10px;
+}
+
+.ellipsis {
+  width: 34px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1150px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .ellipsis {
+    display: none;
+  }
+}
