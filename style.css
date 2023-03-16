@@ -1,28 +1,69 @@
-img {
-	width: 108px;
-}
-
-button {
-	background: white;
-	border: 0;
-	color: #222222;
-	font-size: 16px;
-	font-weight: 600;
-	padding-left: 16px;
-	padding-right: 16px;
-}
-
-.login {
-	color: #737373;
-	float: right;
+body {
+  margin: 0;
 }
 
 header {
-	padding: 24px;
-	margin-left: 144px;
-	margin-right: 144px;
+  padding: 24px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img {
+  width: 108px;
+}
+
+button {
+  background: white;
+  border: 0;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: none;
+}
+
+.login {
+  /* color: #737373; */
+  display: inline-block;
+  /* float: right;  dispaly: flex라 안먹힘*/
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
 }
 
 .firstBtn {
-	margin-left: 80px;
+  margin-left: 80px;
+}
+
+.loginBox {
+  display: flex;
+}
+
+.ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+  }
+
+  .ellipsis {
+    display: none;
+  }
+
+  .login {
+    color: #737373;
+    font-size: 16px;
+    border: none;
+    padding: 0;
+  }
 }

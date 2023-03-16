@@ -1,0 +1,12 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+}
+
+@media (min-width: 768px) {
+  /* @media 색깔이 파란색임. 더 우선순위임 */
+  .box {
+    background-color: black;
+  }
+}

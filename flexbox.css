@@ -1,0 +1,38 @@
+.container {
+  background-color: skyblue;
+  height: 100vh;
+  /* vh단어는 모니터 화면 기준 100%채우기. 모니터별로 높이가 다르기때문 */
+  display: flex;
+  /* 해당 태그 안의 자식태그들을 한줄에 나열함. 디스플레이 속성 자체를 바꾸는건 아님 */
+  /* 너무 길어지면 폭이 줄어듦. 한줄 유지 */
+  flex-direction: column;
+  /* column 세로로 배치하는 것. 많이 길게해도 폭이 줄어들지않음. 세로기준이기때문. */
+  /* 기본은 row값임. row: 가로 / column : 세로 / reverse : 역배치 */
+  justify-content: center;
+  /* flex 자식들을 어떻게 배치할거냐? 메인축 방향 기준으로 정렬*/
+  align-items: center;
+  /* 교차축 정렬 */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.box:nth-child(1) {
+  background-color: pink;
+}
+
+.box:nth-child(2) {
+  background-color: orange;
+}
+
+.box:nth-child(3) {
+  background-color: olive;
+}
+
+#bg-black {
+  background-color: black;
+}
